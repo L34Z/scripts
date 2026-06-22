@@ -129,6 +129,9 @@ step_models() {
   download "$COMFY/models/vae" \
     "LTX23_video_vae_bf16.safetensors" \
     "https://huggingface.co/Kijai/LTX2.3_comfy/resolve/main/vae/LTX23_video_vae_bf16.safetensors" || ok=1
+  download "$COMFY/models/vae" \
+    "taeltx2_3.safetensors" \
+    "https://huggingface.co/Kijai/LTX2.3_comfy/resolve/main/vae/taeltx2_3.safetensors" || ok=1
   # text encoders
   download "$COMFY/models/text_encoders" \
     "ltx-2.3_text_projection_bf16.safetensors" \
